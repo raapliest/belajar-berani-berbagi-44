@@ -9,6 +9,7 @@ import { FeaturedCourses } from '@/components/FeaturedCourses';
 import { CreatorShowcase } from '@/components/CreatorShowcase';
 import { PricingSection } from '@/components/PricingSection';
 import { StatsSection } from '@/components/StatsSection';
+import { EmailCaptureSection } from '@/components/EmailCaptureSection';
 
 const Index = () => {
   return (
@@ -59,6 +60,9 @@ const Index = () => {
 
       {/* Pricing Section */}
       <PricingSection />
+
+      {/* Email Capture Section - NEW */}
+      <EmailCaptureSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500">
