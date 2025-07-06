@@ -20,7 +20,7 @@ export const EmailCaptureSection = () => {
     setTimeout(() => {
       toast({
         title: "🎉 Selamat! Kode diskon berhasil dikirim",
-        description: "Cek email kamu untuk mendapatkan kode diskon 50% dan bonus exclusive content!",
+        description: "Cek email kamu untuk mendapatkan kode diskon 20%!",
       });
       setEmail('');
       setIsSubmitting(false);
@@ -66,10 +66,10 @@ export const EmailCaptureSection = () => {
             ⚡ FLASH SALE - BERAKHIR DALAM 48 JAM ⚡
           </Badge>
 
-          {/* Main Headline - Using FOMO + Benefit */}
+          {/* Main Headline - Simplified to only discount */}
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Dapatkan <span className="text-yellow-300">50% DISKON</span><br />
-            + Bonus Senilai <span className="text-yellow-300">Rp 2.5 Juta</span>
+            Dapatkan <span className="text-yellow-300">20% DISKON</span><br />
+            Untuk Semua Paket Premium
           </h2>
 
           {/* Sub-headline with social proof */}
@@ -84,31 +84,13 @@ export const EmailCaptureSection = () => {
           <CardContent className="p-8">
             <div className="text-center mb-6">
               <Mail className="h-12 w-12 text-orange-500 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                Masukkan Email & Dapatkan Instant:
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Masukkan Email & Dapatkan Kode Diskon 20%
               </h3>
-              <div className="space-y-2 text-left">
-                <div className="flex items-center text-gray-700">
-                  <span className="text-green-500 mr-2">✓</span>
-                  <span><strong>Kode diskon 50%</strong> untuk semua paket premium</span>
-                </div>
-                <div className="flex items-center text-gray-700">
-                  <span className="text-green-500 mr-2">✓</span>
-                  <span><strong>E-book "Blueprint Kreator Sukses"</strong> (Rp 299k)</span>
-                </div>
-                <div className="flex items-center text-gray-700">
-                  <span className="text-green-500 mr-2">✓</span>
-                  <span><strong>Template konten 30 hari</strong> (Rp 199k)</span>
-                </div>
-                <div className="flex items-center text-gray-700">
-                  <span className="text-green-500 mr-2">✓</span>
-                  <span><strong>Akses grup Telegram VIP</strong> (Rp 99k/bulan)</span>
-                </div>
-                <div className="flex items-center text-gray-700">
-                  <span className="text-green-500 mr-2">✓</span>
-                  <span><strong>Mini course "Psychology of Selling"</strong> (Rp 499k)</span>
-                </div>
-              </div>
+              <p className="text-gray-600 mb-6">
+                Dapatkan kode diskon eksklusif yang bisa digunakan untuk semua paket premium kami. 
+                Penawaran terbatas waktu!
+              </p>
             </div>
 
             <form onSubmit={handleEmailSubmit} className="space-y-4">
@@ -126,7 +108,7 @@ export const EmailCaptureSection = () => {
                   disabled={isSubmitting}
                   className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white h-12 px-8 font-bold text-base whitespace-nowrap"
                 >
-                  {isSubmitting ? 'Mengirim...' : 'DAPATKAN DISKON 50% 🚀'}
+                  {isSubmitting ? 'Mengirim...' : 'DAPATKAN DISKON 20% 🚀'}
                 </Button>
               </div>
               <p className="text-xs text-gray-500 text-center">
